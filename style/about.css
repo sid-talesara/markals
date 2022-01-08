@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: rgb(15, 15, 15);
+  width: fit-content;
+  height: 100%;
+  font-family: "poppins", "Montserrat", sans-serif;
+}
+h2 {
+  text-align: center;
+  font-size: 5rem;
+  text-transform: capitalize;
+  font-weight: 600;
+  margin: 1rem;
+  color: white;
+}
+
+img {
+  width: 100%;
+  border-radius: 100%;
+  background: 50px yellow;
+}
+
+.about_panel {
+  /* border: 4px solid aquamarine; */
+  display: inline-block;
+  width: 40%;
+  margin: calc(10% / 4);
+  padding: calc(10% / 4);
+  border-radius: 2%;
+  color: #000000;
+  position: relative;
+  text-align: center;
+}
+
+#ourstory {
+  background-color: #3a955e;
+  float: right;
+  color: white;
+  box-shadow: 8px 10px 15px rgb(99, 99, 99), -2px -2px 8px rgb(189, 188, 188);
+
+  /* padding: 1%; */
+}
+
+#ourstory1,
+#ourstory2 {
+  text-align: left;
+}
+
+h3 {
+  text-align: center;
+  font-size: 2.5rem;
+}
+button {
+  text-align: center;
+  color: rgb(15, 15, 15);
+  background-color: rgb(255, 255, 255);
+  padding: 2%;
+  border: none;
+  border-radius: 3rem;
+  font-size: 1rem;
+}
+button:hover {
+  background-color: white;
+  color: rgb(10, 10, 10);
+  text-decoration: underline;
+  box-shadow: 2px 2px 15px rgb(60, 60, 87), -2px -2px 10px rgb(219, 219, 245);
+  transform: translateY(-2px);
+  transition: 0.3s ease-in;
+}
+
+.founder_name a {
+  font-size: 1.5rem;
+  color: #3a955e;
+  text-decoration: none;
+}
+.founder_name a:hover {
+  background-color: #3a955eaf;
+  color: white;
+  text-decoration: white;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+#linkedin,
+#instagram {
+  width: 2.3rem;
+  background-color: white;
+}
+
+.sociallinks_founder {
+  display: inline-block;
+  padding-top: 0px;
+  margin-top: 0px;
+}
