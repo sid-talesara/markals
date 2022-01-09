@@ -5,96 +5,150 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TREZENG</title>
+  <title>Markals</title>
   <link rel="shortcut icon" href="Assets/rocket_launch_black_24dp.svg" type="image/x-icon" />
-  <link rel="stylesheet" href="style/index.css" />
+  <link rel="stylesheet" href="Style/Index.css" />
+  <script src="https://kit.fontawesome.com/664ce76a9f.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
   <!-- header of the page -->
-  <header>
-    <div class="logo">
-      <h1>
-        <img src="Assets/rocket_launch_white_24dp.svg" alt="logo" />
-        <a href="#home">TREZENG</a>
-      </h1>
-    </div>
-    <nav class="topnav">
-      <ul>
-        <li><a href="#home"> Home</a></li>
-        <li><a href="test.html">Service</a></li>
-        <li><a href="about us.html">About Us</a></li>
-        <li><a href="#contact">Contact Us</a></li>
-      </ul>
-    </nav>
-    <a class="hire_us" href="#"><button>Hire Us</button></a>
-  </header>
-
-  <!-- The home page of website -->
   <main>
     <div id="home">
-      <img id="headerimg" src="Assets/header.jpg" alt="digital marketing image" />
+      <header id="headerspace">
+        <div id="headerlogo">
+          <h1>
+            <img src="Assets/rocket_launch_white_24dp.svg" alt="logo" />
+            <a href="#home">Markals</a>
+          </h1>
+        </div>
+        <nav class="topnav">
+          <ul>
+            <li><a href="#home"> Home</a></li>
+            <li><a href="#service">Service</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+          </ul>
+        </nav>
+        <a id="hire_us" href="#"><button>Hire Us</button></a>
+      </header>
+
+      <!-- The home page of website -->
+
+      <img id="homeimg" src="Assets/header.jpg" alt="digital marketing image" />
     </div>
   </main>
 
   <!-- about us section -->
-  <section id="about_us">
-    <h2>About Us</h2>
-    <div>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-        possimus quaerat nam sequi error natus soluta voluptatum quod veniam
-        maxime non, quidem nisi doloremque dolor suscipit, repellat itaque
-        totam praesentium.
+  <section id="about">
+    <h2 id="aboutusheading" class="sectionheading">About Us</h2>
+    <div class="mainabout">
+      <div class="about_panel">
+
+        <!-- Founder image -->
+        <div id="founderpicpanel">
+          <!-- <img id="founderpic" src="Assets/DSC_3981.JPG" alt="OUR FOUNDERS" /> -->
+        </div>
+        <!-- Founder names -->
+        <!-- founder 1 -->
+        <div class="founderpanel">
+          <h4 class="founder_name"><a href="Work/Siddharth_Talesara_Resume_.pdf" download="Siddharth Talesara Resume">
+              Shivam Kumar</a></h4>
+          <!-- sociallinks of founder -->
+          <p class="sociallinks_founder"><a href="https://www.linkedin.in/sidtalesara" target="_blank"> <img
+                id="linkedin" src="Assets/linkedin.png" alt="linkedin"></a></p>
+          <p class="sociallinks_founder"><a href="https://www.instagram.com/sidtalesara" target="_blank"> <img
+                id="instagram" src="Assets/instagram.jpg" alt="instagram"></a></p>
+        </div>
+
+
+        <!-- Founder 2 -->
+        <div class="founderpanel">
+          <h4 class="founder_name"><a href="Work/Siddharth_Talesara_Resume_.pdf" download="Siddharth Talesara Resume">
+              Siddharth Talesara</a></h4>
+          <!-- sociallinks of founder -->
+          <p class="sociallinks_founder"><a href="https://www.linkedin.in/sidtalesara" target="_blank"> <img
+                id="linkedin" src="Assets/linkedin.png" alt="linkedin"></a></p>
+          <p class="sociallinks_founder"><a href="https://www.instagram.com/sidtalesara" target="_blank"> <img
+                id="instagram" src="Assets/instagram.jpg" alt="instagram"></a></p>
+        </div>
+
+        <!-- Founder 3 -->
+        <div class="founderpanel">
+          <h4 class="founder_name"><a href="Work/Siddharth_Talesara_Resume_.pdf" download="Siddharth Talesara Resume">
+              Satyam Jha</a></h4>
+          <!-- sociallinks of founder -->
+          <p class="sociallinks_founder"><a href="https://www.linkedin.in/sidtalesara" target="_blank"> <img
+                id="linkedin" src="Assets/linkedin.png" alt="linkedin"></a></p>
+          <p class="sociallinks_founder"><a href="https://www.instagram.com/sidtalesara" target="_blank"> <img
+                id="instagram" src="Assets/instagram.jpg" alt="instagram"></a></p>
+        </div>
+
+      </div>
+
+      <div class="about_panel" id="ourstory">
+        <h3 id="ourstoryheading">Our Story</h3>
+        <p id="ourstory1">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa illum,
+          est modi explicabo laudantium cupiditate et natus hic vel labore
+          architecto. Rem veritatis, maxime accusantium, nesciunt fugit illum
+          asperiores ea id quibusdam atque, placeat in. Sed, eius? Veritatis
+          aliquam animi cum officiis eaque adipisci. Aperiam saepe deserunt
+          nihil tempore aut.
+        </p>
+        <p id="ourstory2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis nostrum quod ad,
+          dolore dolorem,
+          eligendi qui autem corporis sit et cum sed consectetur doloribus eos nulla tempora rerum ex culpa
+          veritatis cupiditate doloremque deleniti minima modi? Ad repellat officiis aut expedita rem soluta
+          nesciunt fugiat, quas culpa et officia suscipit animi corporis quaerat exercitationem deleniti non
+          nostrum ea veritatis pariatur?
+        </p>
+        <button id="strkm_button"><a href="#contactus"></a> Know more</button>
+      </div>
+    </div>
+  </section>
+  <!-- services section -->
+  <section id="service">
+    <h2 class="sectionheading">OUR SERVICES</h2>
+    <div class="service">
+      <img class="servicesimg" src="Assets/groww.png" alt="logo" />
+      <h2>Promotions</h2>
+      <p class="servicesdescription">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse
+        doloribus neque hic? Est incidunt voluptatibus soluta nemo, modi
+        possimus tenetur recusandae accusantium totam, ducimus labore
+        quibusdam cupiditate officia, dignissimos iure?
       </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore quasi
-        deserunt saepe repellendus sed officiis rerum perferendis
-        consequuntur, cumque tenetur at harum fuga aliquid itaque numquam,
-        odit est nulla illum?
+      <button class="km_button">Know more</button>
+    </div>
+    <div class="service">
+      <img class="servicesimg" src="Assets/design.png" alt="logo" />
+      <h2>Designing</h2>
+      <p class="servicesdescription">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse
+        doloribus neque hic? Est incidunt voluptatibus soluta nemo, modi
+        possimus tenetur recusandae accusantium totam, ducimus labore
+        quibusdam cupiditate officia, dignissimos iure?
       </p>
-      <img id="grouppic" src="Assets/DSC_3981.JPG" alt="group photo" />
+      <button class="km_button">Know more</button>
+    </div>
+    <div class="service">
+      <img class="servicesimg" src="Assets/management.png" alt="logo" />
+      <h2>Social-Profile</h2>
+      <p class="servicesdescription">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse
+        doloribus neque hic? Est incidunt voluptatibus soluta nemo, modi
+        possimus tenetur recusandae accusantium totam, ducimus labore
+        quibusdam cupiditate officia, dignissimos iure?
+      </p>
+      <button class="km_button">Know more</button>
     </div>
   </section>
 
-  <!-- services section -->
-  <section id="services">
-    <h2>Services</h2>
-    <div>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet ipsam
-        impedit corporis soluta necessitatibus asperiores!
-      </p>
-    </div>
-    <div>
-      <h3>Promotions</h3>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
-        cupiditate porro voluptatem placeat nostrum ullam ipsum ipsam
-        perspiciatis voluptatibus velit.
-      </p>
-    </div>
-    <div>
-      <h3>Designing</h3>
-      <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis
-        iusto alias aliquid natus at quaerat doloremque, beatae expedita!
-        Quam, numquam?
-      </p>
-    </div>
-    <div>
-      <h3>Profile-Management</h3>
-      <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis,
-        officiis eum enim eligendi tenetur cumque necessitatibus fugit aliquam
-        nemo amet.
-      </p>
-    </div>
-  </section>
 
   <!-- contact section -->
   <section id="contact">
-    <h2>Contact Us</h2>
+    <h2 class="sectionheading">Contact Us</h2>
     <div>
       <p>
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus
@@ -102,59 +156,48 @@
       </p>
     </div>
 
-    <div data-tf-widget="WnMoJ3uv" data-tf-iframe-props="title=Get in touch " style="width:100%;height:400px;"></div>
+    <div id="typeform" data-tf-widget="WnMoJ3uv" data-tf-iframe-props="title=Get in touch "></div>
     <script src="//embed.typeform.com/next/embed.js"></script>
 
 
-    <form action="/my-handling-form-page" method="post">
-      <ul>
-        <li>
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="user_name" />
-        </li>
-        <li>
-          <label for="mail">E-mail:</label>
-          <input type="email" id="mail" name="user_email" />
-        </li>
-        <li>
-          <label for="msg">Message:</label>
-          <textarea id="msg" name="user_message"></textarea>
-        </li>
-      </ul>
-    </form>
+
     </div>
   </section>
 
   <!-- buttons
-    <div>
-      <button id="hire_us">Hire Us</button>
-      <button id="hire_us">Twitter</button>
-      <button id="hire_us">Instagram</button>
-      <button id="hire_us">Linkedin</button>
-      <button id="hire_us">Hire Us</button>
-    </div> -->
+  <div>
+    <button id="hire_us">Hire Us</button>
+    <button id="hire_us">Twitter</button>
+    <button id="hire_us">Instagram</button>
+    <button id="hire_us">Linkedin</button>
+    <button id="hire_us">Hire Us</button>
+  </div> -->
 
   <!-- footer menu -->
   <footer class="footer_menu">
+
+    <!-- footer social links -->
+    <div class="social">
+
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+      <a href="#"><i class="fas fa-envelope"></i></a>
+
+    </div>
     <!-- footer navigation links -->
-    <div class="bottomnav">
+    <div class="bottomnavlist">
       <ul>
         <li><a href="#home">Home</a></li>
         <li><a href="#services">Services</a></li>
         <li><a href="#about_us">About Us</a></li>
         <li><a href="#contact">Contact Us</a></li>
+        <li><a href="#terms">Terms</a></li>
+        <li><a href="#privacy policy">Privacy Policy</a></li>
       </ul>
     </div>
 
-    <!-- footer social links -->
-    <div class="social">
-      <ul>
-        <li><a href="#">Instagram</a></li>
-        <li><a href="#">Youtube</a></li>
-        <li><a href="#">Linkedin</a></li>
-        <li><a href="#">Mail</a></li>
-      </ul>
-    </div>
+
   </footer>
 </body>
 
