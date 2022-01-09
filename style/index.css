@@ -1,41 +1,54 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* ----------------------------------- */
+/* ----------------------------------- */
+/* ----------------------------------- */
+
 /* for whole page */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Montserrat", sans-serif;
+  font-family: "poppins", sans-serif;
+  color: #fcfcfc;
 }
+body {
+  background-color: rgba(15, 15, 15);
+}
+
 html {
   scroll-behavior: smooth;
 }
-header {
+
+/* ----------------------------------- */
+/* ----------------------------------- */
+/* ----------------------------------- */
+
+/* top nav bar */
+
+#headerspace {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 30px 10%;
-  background-color: #1d3557;
+  background-color: #353535;
   position: -webkit-sticky;
   position: sticky;
   top: 0px;
 }
 
-.logo h1 a {
-  font-family: "Montserrat", sans-serif;
-  color: linen;
+#home h1 a {
   float: left;
   font-weight: 500px;
   padding: 10px;
   text-decoration: none;
   cursor: pointer;
 }
-
 .topnav {
-  font-family: "Montserrat", sans-serif;
-  color: #ffff98;
   font-style: none;
   float: right;
-
   list-style: none;
 }
 .topnav li {
@@ -48,11 +61,11 @@ header {
   text-decoration: none;
 }
 .topnav li a:hover {
-  color: #ff7575;
+  /* color: #ff7575; */
   text-decoration: underline;
 }
 
-button {
+#hire_us button {
   color: rgb(43, 43, 43);
   background-color: chartreuse;
   border-radius: 30px;
@@ -64,35 +77,258 @@ button {
   margin: 10px;
   padding: 5px;
 }
-button:hover {
+
+#hire_us button:hover {
   color: linen;
   background-color: tomato;
 }
-#headerimg {
+
+#homeimg {
   width: 100%;
 }
-main {
+#home {
   width: 100%;
   height: 100vh;
 }
+
+/* ----------------------------------- */
+/* ----------------------------------- */
+/* ----------------------------------- */
+
 section {
   width: 100%;
   float: left;
-  height: 100vh;
+  /* height: 100vh; */
   position: relative;
 }
-#about_us {
-  background-color: aqua;
+
+/* About us Section */
+
+#about {
+  background-color: rgb(15, 15, 15);
 }
-/* #about_us p {
-  background-color: aqua;
+.sociallinks_founder a img {
+  width: 15%;
+  margin: 0;
+  display: inline-block;
+  border-radius: 80%;
+  background-color: white;
+}
+.sociallinks_founder {
+  display: inline;
+  width: 100%;
+}
+/* #aboutusheading {
+  text-align: center;
+  font-size: 5rem;
+  text-transform: capitalize;
+  font-weight: 600;
+  margin: 1rem;
+  color: white;
 } */
-#services {
+#founderpicpanel {
+  background: no-repeat center url(Assets/DSC_4009-removebg-preview.png),
+    no-repeat left url(Assets/DSC_4009-removebg-preview.png),
+    no-repeat right url(Assets/DSC_4009-removebg-preview.png), #3a955e;
+  width: 100%;
+  height: 300px;
+}
+.mainabout {
+  background-color: rgb(15, 15, 15);
+  width: 100%;
+  height: 100%;
+}
+#founderpic {
+  width: 90%;
+  margin: 5%;
+  border-radius: 10%;
+}
+.founder_name {
+  margin-bottom: 0px;
+}
+.founder_name a {
+  font-size: 1.5rem;
+
+  text-decoration: none;
+  color: #ffffff;
+}
+.founder_name a:hover {
+  background-color: #000000af;
+  color: white;
+  text-decoration: white;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.founderpanel {
+  width: 25%;
+  text-align: center;
+  display: inline-block;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+  margin-left: calc(20% / 6);
+  margin-right: calc(20% / 6);
+  box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.2),
+    5px 5px 10px rgba(0, 0, 0, 0.2),
+    inset -15px -15px 25px rgba(255, 255, 255, 0.2),
+    inset 5px 5px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 47%;
+}
+.about_panel {
+  width: 85%;
+  margin: calc(10% / 2);
+  border-radius: 2%;
+  color: #000000;
+  text-align: center;
+}
+
+#ourstory {
+  background-color: #3a955e;
+  padding: calc(10% / 4);
+  color: white;
+  box-shadow: -15px -15px 15px rgba(255, 255, 255, 0.2),
+    15px 15px 15px rgba(0, 0, 0, 0.1),
+    inset -5px -5px 15px rgba(255, 255, 255, 0.2),
+    inset 5px 5px 15px rgba(0, 0, 0, 0.1);
+  margin: 5%;
+}
+
+#ourstory1,
+#ourstory2 {
+  text-align: left;
+}
+
+#ourstoryheading {
+  text-align: center;
+  font-size: 2.5rem;
+}
+#strkm_button {
+  text-align: center;
+  color: rgb(15, 15, 15);
+  background-color: rgb(255, 255, 255);
+  padding: 2%;
+  border: none;
+  border-radius: 3rem;
+  font-size: 1rem;
+}
+#strkm_button:hover {
+  background-color: white;
+  color: rgb(10, 10, 10);
+  text-decoration: underline;
+  box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.2),
+    5px 5px 10px rgba(0, 0, 0, 0.1),
+    inset -5px -5px 15px rgba(255, 255, 255, 0.2),
+    inset 5px 5px 15px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+/* ----------------------------------- */
+/* ----------------------------------- */
+/* ----------------------------------- */
+/* Servies Panel  */
+#service {
   background-color: coral;
 }
-#contact {
-  background-color: goldenrod;
+
+.service {
+  background-color: rgb(36, 36, 36);
+  display: inline-block;
+  color: white;
+  width: 25%;
+  height: 600px;
+  margin: calc(15% / 6);
+  padding: calc(10% / 6);
+  border-radius: 3%;
+  text-align: center;
+  align-items: center;
 }
+.service:hover {
+  background-color: rgb(198, 198, 255);
+  color: rgb(46, 46, 46);
+  box-shadow: 8px 10px 15px rgb(60, 60, 87), -2px -2px 10px rgb(219, 219, 245);
+  transform: translateY(-10px);
+
+  transition: 0.1s ease-in;
+}
+
+.service button:hover {
+  background-color: white;
+  color: rgb(10, 10, 10);
+}
+
+.km_button {
+  background-color: transparent;
+  color: white;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  width: 33%;
+  padding: 10px;
+  align-items: center;
+}
+.km_button:hover {
+  background-color: white;
+  color: rgb(10, 10, 10);
+  text-decoration: underline;
+  box-shadow: 2px 2px 15px rgb(60, 60, 87), -2px -2px 10px rgb(219, 219, 245);
+  transform: translateY(-2px);
+  transition: 0.3s ease-in;
+}
+.servicesdescription {
+  text-align: left;
+  font-weight: 400;
+}
+.servicesimg {
+  align-items: center;
+  height: 250px;
+}
+.sectionheading {
+  color: white;
+  font-weight: bold;
+  font-size: 3rem;
+  text-align: center;
+}
+
+/* ----------------------------------- */
+/* ----------------------------------- */
+/* ----------------------------------- */
+
+/* Contact us section  */
+#contact {
+  background-color: rgba(15, 15, 15);
+}
+
+#typeform {
+  width: 100%;
+  height: 100vh;
+}
+
+/* footer menu  */
+.footer_menu {
+  background-color: rgb(36, 36, 36);
+}
+.bottomnavlist {
+  padding: 40px 0px;
+}
+
+.social {
+  padding: 40px 0px;
+}
+.social a {
+  font-size: 24px;
+  border: 1.5px solid #ccc;
+  width: 40px;
+  height: 40px;
+  line-height: 38px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  margin: 0 8px;
+  opacity: 65%;
+}
+.social a:hover {
+  opacity: 95%;
+}
+
 #grouppic {
   width: 100%;
 }
