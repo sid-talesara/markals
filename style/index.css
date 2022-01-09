@@ -300,9 +300,9 @@ section {
 
 .servicesimg {
   align-items: center;
-  height: 250px;
+  width: 100%;
+  height: auto;
 }
-
 .sectionheading {
   color: #fff;
   font-weight: 700;
