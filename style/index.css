@@ -9,7 +9,7 @@
 /* ----------------------------------- */
 /* for whole page */
 * {
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   margin: 0;
   padding: 0;
   font-family: "poppins", sans-serif;
@@ -18,6 +18,7 @@
 
 body {
   background-color: rgba(15, 15, 15);
+  color: #fcfcfc;
 }
 
 html {
@@ -108,7 +109,7 @@ section {
 
 /* About us Section */
 #about {
-  background-color: #0f0f0f;
+  background-color: #3a955e;
 }
 
 .sociallinks_founder a img {
@@ -133,15 +134,15 @@ section {
   color: white;
 } */
 #founderpicpanel {
-  background: no-repeat center url(Assets/DSC_4009-removebg-preview.png),
-    no-repeat left url(Assets/DSC_4009-removebg-preview.png),
-    no-repeat right url(Assets/DSC_4009-removebg-preview.png), #3a955e;
+  background: no-repeat center url(../Assets/DSC_4009-removebg-preview.png),
+    no-repeat left url(../Assets/DSC_4009-removebg-preview.png),
+    no-repeat right url(../Assets/DSC_4009-removebg-preview.png), #3a955e;
   width: 100%;
   height: 300px;
 }
 
 .mainabout {
-  background-color: #0f0f0f;
+  background-color: #3a955e;
   width: 100%;
   height: 100%;
 }
@@ -180,9 +181,9 @@ section {
   margin-right: calc(20% / 6);
   box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.2),
     5px 5px 10px rgba(0, 0, 0, 0.2),
-    inset -15px -15px 25px rgba(255, 255, 255, 0.2),
-    inset 5px 5px 15px rgba(0, 0, 0, 0.1);
-  border-radius: 47%;
+    inset -5px -5px 10px rgba(255, 255, 255, 0.2),
+    inset 5px 5px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 3rem;
 }
 
 .about_panel {
@@ -191,16 +192,19 @@ section {
   border-radius: 2%;
   color: #000;
   text-align: center;
+  border-radius: 3rem;
+  font-size: 1rem;
 }
 
 #ourstory {
   background-color: #3a955e;
   padding: calc(10% / 4);
   color: #fff;
-  box-shadow: -15px -15px 15px rgba(255, 255, 255, 0.2),
-    15px 15px 15px rgba(0, 0, 0, 0.1),
+  box-shadow: -7px -7px 12px rgba(255, 255, 255, 0.2),
+    10px 10px 10px rgba(0, 0, 0, 0.1),
     inset -5px -5px 15px rgba(255, 255, 255, 0.2),
     inset 5px 5px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
   margin: 5%;
 }
 
@@ -240,7 +244,8 @@ section {
 /* ----------------------------------- */
 /* Servies Panel  */
 #service {
-  background-color: #ff7f50;
+  background-color: rgba(15, 15, 15);
+  width: 100%;
 }
 
 .service {
@@ -303,6 +308,7 @@ section {
   font-weight: 700;
   font-size: 3rem;
   text-align: center;
+  margin: 3rem;
 }
 
 /* ----------------------------------- */
@@ -310,7 +316,7 @@ section {
 /* ----------------------------------- */
 /* Contact us section  */
 #contact {
-  background-color: rgba(15, 15, 15);
+  background-color: #ff7f50;
 }
 
 #typeform {
@@ -318,13 +324,23 @@ section {
   height: 100vh;
 }
 
-#contact p {
+#contact {
   text-align: center;
 }
 
-#contact a {
-  text-align: center;
+#mail i {
+  margin: 20px;
+  color: #3d3d3d;
+  text-transform: capitalize;
+  border: 1px solid #3d3d3d;
+  padding: 0.75rem;
+  border-radius: 3rem;
   font-size: 1.5rem;
+  transition: 0.3s;
+}
+#mail i:hover {
+  color: #fff;
+  background-color: #3d3d3d;
 }
 
 /* ----------------------------------- */
@@ -336,11 +352,11 @@ section {
 }
 
 .bottomnavlist {
-  padding: 40px 0px;
+  padding: 20px 0px;
 }
 
 .social {
-  padding: 40px 0;
+  padding: 0px 0;
 
   text-align: center;
 }
@@ -355,7 +371,7 @@ section {
   text-align: center;
   border-radius: 50%;
   margin: 20px 8px;
-  opacity: 65%;
+  opacity: 50%;
 }
 
 .social a:hover {
@@ -363,13 +379,11 @@ section {
 }
 
 .bottomnavlist ul {
-  margin-top: 0;
+  margin: 0;
   padding: 0;
   list-style: none;
   font-size: 18px;
-  line-height: 1.6;
-  margin-bottom: 0;
-  margin-top: 0;
+
   text-align: center;
 }
 
@@ -381,6 +395,11 @@ section {
 .bottomnavlist ul li {
   display: inline-block;
   padding: 0 15px;
+  opacity: 50%;
+}
+.bottomnavlist ul li:hover {
+  opacity: 95%;
+  text-decoration: underline;
 }
 
 .footer_menu p {
