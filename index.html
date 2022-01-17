@@ -9,6 +9,7 @@
   <link rel="shortcut icon" href="Assets/rocket_launch_black_24dp.svg" type="image/x-icon" />
   <link rel="stylesheet" href="style/index.css" />
   <script src="https://kit.fontawesome.com/664ce76a9f.js" crossorigin="anonymous"></script>
+  <!-- <script src="/Markals/app.js"></script> -->
 </head>
 
 <body>
@@ -16,17 +17,24 @@
     <!--header menu-->
     <div id="home">
       <header id="headerspace">
-        <div id="headerlogo">
-          <h1> <img src="Assets/rocket_launch_white_24dp.svg" alt="logo" /> <a href="#home">Markals</a> </h1>
+        <div>
+          <h1 class="brandname"> <img src="Assets/rocket_launch_white_24dp.svg" alt="logo" /> <a
+              href="#home">Markals</a> </h1>
         </div>
-        <nav class="topnav">
+        <nav class="topnav" id="topnav">
+          <input type="checkbox" id="click">
           <ul>
             <li><a href="#home"> Home</a></li>
             <li><a href="#service">Service</a></li>
             <li><a href="#about">About Us</a></li>
             <li><a href="#contact">Contact Us</a></li>
           </ul>
+          
         </nav> <a id="hire_us" href="#contact"><button>Hire Us</button></a>
+
+        <label for="click" class="menu-btn">
+          <i class="fas fa-bars"></i>
+        </label>
       </header>
 
       <section class="homescreen">
@@ -35,13 +43,14 @@
           <img src="Assets/header_!.png" alt="grow digitally">
         </div>
         <div class="home_screen">
-          <h1>Grow your Business</h1>
+          <h2>Grow your Business</h2>
           <h3>Kickstart your business</h3>
           <a id="hire_us" href="#contact"><button>Hire Us</button></a>
         </div>
       </section>
     </div>
   </main>
+
   <!-- ------------------------------- -->
   <!-- ------------------------------- -->
   <!-- ------------------------------- -->
@@ -92,68 +101,71 @@
         pariatur? </p> <button id="strkm_button"><a href="#contactus"></a> Know more</button>
     </div>
     </div>
-  </section>
-  <!-- ------------------------------- -->
-  <!-- ------------------------------- -->
-  <!-- ------------------------------- -->
-  <!--service-->
-  <section id="service">
-    <h2 class="sectionheading">OUR SERVICES</h2>
-    <div class="container">
-      <div class="service">
-        <img class="servicesimg" src="Assets/groww.png" alt="logo" />
-        <h2>Promotions</h2>
-        <p class="servicesdescription"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse doloribus neque
-          hic? Est incidunt voluptatibus soluta nemo, modi possimus tenetur recusandae accusantium totam, ducimus labore
-          quibusdam cupiditate officia, dignissimos iure? </p> <button class="km_button">Know more</button>
-      </div>
-      <div class="service">
-        <img class="servicesimg" src="Assets/design.png" alt="logo" />
-        <h2>Designing</h2>
-        <p class="servicesdescription"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse doloribus neque
-          hic? Est incidunt voluptatibus soluta nemo, modi possimus tenetur recusandae accusantium totam, ducimus labore
-          quibusdam cupiditate officia, dignissimos iure? </p> <button class="km_button">Know more</button>
-      </div>
-      <div class="service">
-        <img class="servicesimg" src="Assets/management.png" alt="logo" />
-        <h2>Social-Profile</h2>
-        <p class="servicesdescription"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse doloribus neque
-          hic? Est incidunt voluptatibus soluta nemo, modi possimus tenetur recusandae accusantium totam, ducimus labore
-          quibusdam cupiditate officia, dignissimos iure? </p> <button class="km_button">Know more</button>
-      </div>
-    </div>
 
-    <!--contact-->
-    <section id="contact">
-      <h2 class="sectionheading">Contact Us</h2>
-      <div>
-        <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus quidem iusto laborum facere similique
-          laudantium. </p> <a id="mail" href="mailto:hello@markals.com"><i class="fas fa-envelope">
-            hello@markals.com</i></a>
+    <!-- ------------------------------- -->
+    <!-- ------------------------------- -->
+    <!-- ------------------------------- -->
+    <!--service-->
+    <section id="service">
+      <h2 class="sectionheading">OUR SERVICES</h2>
+      <div class="container">
+        <div class="service">
+          <img class="servicesimg" src="Assets/iloveimg-resized/groww.png" alt="logo" />
+          <h2>Promotions</h2>
+          <p class="servicesdescription"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse doloribus neque
+            hic? Est incidunt voluptatibus soluta nemo, modi possimus tenetur recusandae accusantium totam, ducimus
+            labore
+            quibusdam cupiditate officia, dignissimos iure? </p> <button class="km_button">Know more</button>
+        </div>
+        <div class="service">
+          <img class="servicesimg" src="Assets/iloveimg-resized/design.png" alt="logo" />
+          <h2>Designing</h2>
+          <p class="servicesdescription"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse doloribus neque
+            hic? Est incidunt voluptatibus soluta nemo, modi possimus tenetur recusandae accusantium totam, ducimus
+            labore
+            quibusdam cupiditate officia, dignissimos iure? </p> <button class="km_button">Know more</button>
+        </div>
+        <div class="service">
+          <img class="servicesimg" src="Assets/iloveimg-resized/management.png" alt="logo" />
+          <h2>Social-Profile</h2>
+          <p class="servicesdescription"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse doloribus neque
+            hic? Est incidunt voluptatibus soluta nemo, modi possimus tenetur recusandae accusantium totam, ducimus
+            labore
+            quibusdam cupiditate officia, dignissimos iure? </p> <button class="km_button">Know more</button>
+        </div>
       </div>
-      <div id="typeform" data-tf-widget="WnMoJ3uv" data-tf-iframe-props="title=Get in touch "></div>
-      <script src="//embed.typeform.com/next/embed.js"></script>
-      </div>
-    </section>
-    <!--footer-->
-    <footer class="footer_menu">
-      <div class="social"> <a href="#"><i class="fab fa-instagram"></i></a> <a href="#"><i
-            class="fab fa-twitter"></i></a>
-        <a href="https://www.linkedin.com"><i class="fab fa-linkedin"></i></a> <a href="mailto:hello@markals.com"><i
-            class="fas fa-envelope"></i></a>
-      </div>
-      <div class="bottomnavlist">
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#service">Services</a></li>
-          <li><a href="#about">About Us</a></li>
-          <li><a href="#contact">Contact Us</a></li>
-          <li><a href="#terms">Terms</a></li>
-          <li><a href="#privacy policy">Privacy Policy</a></li>
-        </ul>
-      </div>
-      <p>Copyright &copyMarkals 2022</p>
-    </footer>
+
+      <!--contact-->
+      <section id="contact">
+        <h2 class="sectionheading">Contact Us</h2>
+        <div>
+          <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus quidem iusto laborum facere similique
+            laudantium. </p> <a id="mail" href="mailto:hello@markals.com"><i class="fas fa-envelope">
+              hello@markals.com</i></a>
+        </div>
+        <div id="typeform" data-tf-widget="WnMoJ3uv" data-tf-iframe-props="title=Get in touch "></div>
+        <script src="//embed.typeform.com/next/embed.js"></script>
+        </div>
+      </section>
+      <!--footer-->
+      <footer class="footer_menu">
+        <div class="social"> <a href="#"><i class="fab fa-instagram"></i></a> <a href="#"><i
+              class="fab fa-twitter"></i></a>
+          <a href="https://www.linkedin.com"><i class="fab fa-linkedin"></i></a> <a href="mailto:hello@markals.com"><i
+              class="fas fa-envelope"></i></a>
+        </div>
+        <div class="bottomnavlist">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#service">Services</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="#terms">Terms</a></li>
+            <li><a href="#privacy policy">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <p>Copyright &copyMarkals 2022</p>
+      </footer>
 </body>
 
 </html>
