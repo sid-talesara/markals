@@ -275,6 +275,10 @@ section {
   border-radius: 80%;
   /* background-color: #fff; */
 }
+.sociallinks_founder a i:hover {
+  color: #000000af;
+  
+}
 
 #ourstory {
   background-color: #3a955e;
