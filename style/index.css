@@ -267,17 +267,16 @@ section {
   width: 100%;
 }
 .sociallinks_founder a i {
-  width: 15%;
+  /* width: 15%; */
   margin: 0;
   display: inline-block;
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: white;
   border-radius: 80%;
   /* background-color: #fff; */
 }
 .sociallinks_founder a i:hover {
   color: #000000af;
-  
 }
 
 #ourstory {
