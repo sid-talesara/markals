@@ -25,11 +25,11 @@
           <input type="checkbox" id="click">
           <ul>
             <li><a href="#home"> Home</a></li>
-            <li><a href="#service">Service</a></li>
-            <li><a href="#about">About Us</a></li>
+            <li><a href="#service">Services</a></li>
+            <li><a href="#about"><a href="#about">About Us</a></li>
             <li><a href="#contact">Contact Us</a></li>
           </ul>
-          
+
         </nav> <a id="hire_us" href="#contact"><button>Hire Us</button></a>
 
         <label for="click" class="menu-btn">
@@ -166,6 +166,22 @@
         </div>
         <p>Copyright &copyMarkals 2022</p>
       </footer>
+      <script type="text/javascript">
+        var lastScrollTop = 0;
+        navbar = document.getElementById("headerspace");
+        window.addEventListener("scroll", function () {
+          var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+          if (scrollTop > lastScrollTop) {
+            navbar.style.top = "-100px";
+
+          }
+          else {
+            navbar.style.top = "0";
+          }
+          lastScrollTop = scrollTop;
+        })
+
+      </script>
 </body>
 
 </html>
