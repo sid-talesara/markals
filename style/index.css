@@ -266,13 +266,16 @@ section {
   display: inline;
   width: 100%;
 }
-.sociallinks_founder a img {
+.sociallinks_founder a i {
   width: 15%;
   margin: 0;
   display: inline-block;
+  font-size: 2rem;
+  color: white;
   border-radius: 80%;
-  background-color: #fff;
+  /* background-color: #fff; */
 }
+
 
 #ourstory {
   background-color: #3a955e;
