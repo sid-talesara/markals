@@ -16,8 +16,9 @@
 }
 
 body {
-  background-color: rgba(15, 15, 15);
+  /* background-color: white; */
   color: #fcfcfc;
+  width: 100%;
 }
 
 html {
@@ -25,7 +26,7 @@ html {
 }
 #home {
   width: 100%;
-  height: auto;
+  /* background-color: white; */
 }
 
 /* ----------------------------------- */
@@ -39,10 +40,16 @@ html {
   align-items: center;
   padding: 20px 10%;
   background-color: #353535;
-  position: -webkit-sticky;
-  position: sticky;
+  /* position: -webkit-sticky; */
+  position: fixed;
+  z-index: 1;
+  width: 80%;
   top: 0;
   font-size: 1rem;
+  transition: all 0.3s ease;
+}
+.brandname {
+  float: left;
 }
 .brandname a {
   font-weight: 500px;
@@ -66,6 +73,7 @@ html {
   transition: all 0.3s ease 0s;
   color: #fff;
   text-decoration: none;
+  font-size: 1.2rem;
 }
 
 .topnav li a:hover {
@@ -99,14 +107,14 @@ html {
   display: none;
 }
 
-@media (max-width: 804px) {
+@media (max-width: 904px) {
   /*for responsive navbar*/
 
   #topnav ul {
     position: fixed;
-    top: 80px;
+    top: 88px;
     left: -100%;
-    background-color: #111;
+    background-color: #111111e1;
     width: 100%;
     height: 100vh;
     text-align: center;
@@ -137,6 +145,10 @@ html {
   #click:checked ~ .menu-btn i:before {
     content: "\f00d";
   }
+
+  #home:checked ~ ul {
+    left: 0%;
+  }
 }
 /* ----------------------------------- */
 /* ----------------------------------- */
@@ -144,9 +156,9 @@ html {
 /* homescreen */
 
 .homescreen {
-  background-color: white;
   margin: 0;
   padding: 0;
+
   display: flex;
   width: 100%;
   justify-content: center;
@@ -156,7 +168,8 @@ html {
   width: 50%;
   text-align: center;
   color: #000;
-  margin: 5%;
+  /* margin: 5%; */
+  margin-top: 8%;
 }
 .home_screen img {
   padding: 5%;
@@ -170,7 +183,7 @@ html {
   font-size: 1.5rem;
 }
 
-@media (max-width: 804px) {
+@media (max-width: 904px) {
   /*for responsive navbar*/
 
   .homescreen {
@@ -195,6 +208,7 @@ section {
 /* About us Section */
 #about {
   background-color: #3a955e; /*Setting background color as green*/
+  height: auto;
   /* height: 65rem; */
 }
 
@@ -381,6 +395,8 @@ section {
   font-size: 3rem;
   text-align: center;
   margin: 3rem;
+  padding: 1rem;
+  padding-top: 6rem;
 }
 
 /* ----------------------------------- */
@@ -394,6 +410,7 @@ section {
 #typeform {
   width: 100%;
   height: 100vh;
+  position: relative;
 }
 
 #contact {
